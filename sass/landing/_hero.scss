@@ -1,0 +1,54 @@
+.hero{
+  background: #1287bf url("../images/hero-bg.jpg") no-repeat;
+  background-size:cover;
+  h2{
+    margin:60px auto 0;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    @media screen and (min-width: 500px){
+      font-size: 48px;
+    }
+    @media screen and (min-width: 768px){
+      margin: 170px auto 0;
+    }
+  }
+  h3{
+    margin:0 auto 20px;
+    text-align: center;
+    color: white;
+    font-size: 17px;
+    font-weight: 300;
+    @media screen and (min-width: 500px){
+      font-size: 30px;
+    }
+  }
+  a{
+    display:block;
+    margin: 0 auto 100px;
+    padding: 15px 30px;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #f8cd53;
+    border-radius: 6px;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    transition: 0.5s;
+    &:hover{
+      opacity: 0.5;
+    }
+    @media screen and (min-width: 500px){
+      width: 330px;
+      height: 72px;
+      padding: 25px 40px;
+      font-size: 23px;
+      line-height: 1;
+    }
+    @media screen and (min-width: 768px){
+      margin: 0 auto 230px;
+    }
+  }
+}

@@ -1,0 +1,66 @@
+.intro{
+  overflow: hidden;
+  h2{
+    margin-top:40px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    color: #424242;
+    @media screen and (min-width: 500px){
+      margin-top:90px;
+    }
+  }
+  .description-intro{
+    position:relative;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+    color: #424242;
+    &:after{
+      content:"";
+      position:absolute;
+      display:inline-block;
+      margin: 0 auto;
+      width: 47px;
+      height: 5px;
+      background-color: #424242;
+      top: 115%;
+      right: 38%;
+      left:38%;
+    }
+  }
+  ul{
+    margin:50px 0 0;
+    text-align: center;
+    li{
+      padding:20px;
+      display:inline-block;
+      @media screen and (min-width: 500px){
+        @include span(6 of 12);
+        &:nth-of-type(2){
+          @include last;
+        }
+      }
+      @media screen and (min-width: 740px){
+        margin-bottom:100px;
+        @include span(4 of 12);
+        &:nth-of-type(3){
+          @include last;
+        }
+      }
+      h3{
+        margin-top:10px;
+        color: #424242;
+        font-size: 22px;
+        font-weight: 700;
+      }
+      p{
+        color: #5b5b5b;
+        font-family: "Open Sans";
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+      }
+    }
+  }
+}

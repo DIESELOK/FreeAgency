@@ -1,0 +1,57 @@
+// Screen
+// ======
+@font-face {
+  font-family: 'Helvetica Neue';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Helvetica Neue LT Std 45 Light'), url('../fonts/HelveticaNeueLTStd Lt.woff') format('woff');
+}
+@font-face {
+  font-family: 'Helvetica Neue';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Helvetica Neue Bold'), url('../fonts/HelveticaNeueBold.woff') format('woff');
+}
+@font-face {
+  font-family: 'Helvetica Neue';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Helvetica 65 Medium'), url('../fonts/HelveticaNeue-Medium.woff') format('woff');
+}
+@font-face {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Helveticar'), url('../fonts/Helvetica CE Regular.ttf') format('ttf');
+}
+@font-face {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: bold;
+  src: local('Helvetica CE Bold'), url('../fonts/Helvetica CE Bold.ttf') format('ttf');
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import 'compass';
+@import "grids";
+@import "reset";
+@import "layout/header";
+@import "landing/hero";
+@import "landing/intro";
+@import "landing/skills";
+@import "landing/portfolio";
+@import "landing/details-form";
+@import "landing/subscribe-form";
+@import "layout/footer";
+
+
+@include border-box-sizing();
+.container{
+  @include container();
+  padding:0 15px;
+  overflow: hidden;
+}
+img{
+  max-width:100%;
+  height:auto;
+}
